@@ -1,41 +1,37 @@
-# EX 55 C program to find a square of number using function with arguments without return type.
+# EX 56 A function to display stack elements using Linked List.(store float data in stack) .
 ## DATE:07-05-2025
 ## AIM:
-To write a C program to find a square of number using function with arguments without return type.
+To write a C function to display stack elements using Linked List.
 
 ## Algorithm:
-
-1. **Start**  
-2. Define a function `findSquare(num)` that takes an integer argument.  
-3. Inside the function, compute `num * num` and display the result.  
-4. In the `main()` function:  
-   - Accept an integer input from the user.  
-   - Call `findSquare(number)` with the input value.  
-5. **End**  
-
-
+1. Start. 
+2. Define a variables. 
+3. Write a program to display stack elements using linked list. 
+4. Read the value using scanf. 
+5. Ask the user to make an input. 
+6. Print out the answer. 
+7. End 
 ## Program:
 ```c program
-#include <stdio.h>
-
-void findSquare(int num) {
-    printf("Square of %d is: %d\n", num, num * num);
-}
-
-int main() {
-    int number;
-    printf("Enter a number: ");
-    scanf("%d", &number);
-    
-    findSquare(number);
-    
-    return 0;
+Struct Node 
+{ 
+float data; 
+struct Node *next; 
+}*head; 
+void display() 
+{ 
+struct Node *temp= head; 
+while(temp!=NULL) 
+{ 
+printf("%.2f\n",temp->data); 
+temp=temp->next; 
+} 
+ 
 }
 ```
-
 ## Output:
-![image](https://github.com/user-attachments/assets/417382e7-5233-4f85-af71-e0b854b57f79)
 
+![image](https://github.com/user-attachments/assets/febd2b64-c8eb-4dda-bc3a-ad746a67ac5b)
 
 
 ## Result:
